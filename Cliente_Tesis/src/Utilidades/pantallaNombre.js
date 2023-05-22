@@ -1,22 +1,25 @@
 const empleosStack ={
     tab:"EmpleosTab",
-    //empleos:"Empleos",
-    //addEmpleo:"AddEmpleo"
+    empleos:"Empleos",
+    addEmpleo:"AddEmpleo"
 }
-const favoritosStack ={
-    tab:"FavoritosTab"
+const postulacionesStack ={
+    tab:"PostulacionesTab",
+    postulaciones:"Postulaciones"
 }
 const buscarStack ={
-    tab:"BuscarTab"
+    tab:"BuscarTab",
+    buscar:"Buscar"
 }
 const cuentaStack ={
-    tab:"CuentaTab"
+    tab:"CuentaTab",
+    cuenta:"Cuenta"
 }
 
 
 export  const pantalla={
     empleo:empleosStack,
-    favoritos:favoritosStack,
+    postulaciones:postulacionesStack,
     buscar:buscarStack,
     cuenta:cuentaStack,
 };

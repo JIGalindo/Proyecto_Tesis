@@ -1,10 +1,10 @@
 import { View, Text } from 'react-native'
 import React from 'react'
 
-export function EmpleosPantalla() {
+export function AddEmpleoPantalla() {
   return (
     <View>
-      <Text>Empleos</Text>
+      <Text>Esta es la pantalla de  crear empleo</Text>
     </View>
   )
 }
