@@ -13,7 +13,9 @@ const buscarStack ={
 }
 const cuentaStack ={
     tab:"CuentaTab",
-    cuenta:"Cuenta"
+    cuenta:"Cuenta",
+    logueo:"Logueo",
+    registro:"Registro",
 }
 
 
