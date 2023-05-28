@@ -2,7 +2,7 @@
 import {getAuth,onAuthStateChanged} from "firebase/auth"
 import React ,{ useEffect, useState } from "react";
 import {InicioUsuario} from "./InicioUsuario/InicioUsuarioPantalla"
-import { UsuarioLogueado } from "./UsuarioLogueado";
+import {UsuarioLogueado} from "./UsuarioLogueadoPantalla/UsuarioLogueado"
 import {CargandoModal} from "../../Componentes"
 
 export function CuentaPantalla() {

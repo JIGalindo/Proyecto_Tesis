@@ -6,6 +6,7 @@ import { useFormik } from "formik";
 import {useNavigation} from "@react-navigation/native"
 import  Toast  from "react-native-toast-message/lib/src/Toast";
 import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
+import {pantalla}from "../../../Utilidades"
 import { initialValues, validationSchema } from "./RegistroForm.data";
 
 export function RegistroForm() {
@@ -26,7 +27,7 @@ export function RegistroForm() {
           formValue.email,
           formValue.password
         );
-          navegacion.goBack();
+          navegacion.navigate(pantalla.cuenta.cuenta);
       } catch (error) {
         Toast.show({
           type:"error",
