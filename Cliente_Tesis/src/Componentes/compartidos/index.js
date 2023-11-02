@@ -1,2 +1,5 @@
 export * from "./CargandoModal"
 export * from "./Modal"
+export * from "./Carrusel"
+export * from "./Loading"
+export * from "./Map"

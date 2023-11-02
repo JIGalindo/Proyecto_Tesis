@@ -1,15 +1,20 @@
 import { StyleSheet } from "react-native";
 
 export const styles= StyleSheet.create({
-    imagen:{
-        resizeMode:"contain",
-        width:150,
-        height:150,
-        marginHorizontal:140,
-        marginBottom:20
+    todo:{
+        justifyContent: 'center',
+        alignItems: 'center',
+        marginHorizontal:15,
+        marginVertical:5,
+        
     },
     contenido:{
-        marginHorizontal:40,
-    }
+        marginHorizontal:30,
+    },
+       imagen:{
+        resizeMode:"contain",
+        width:200,
+        height:200,
+    },
    
 })

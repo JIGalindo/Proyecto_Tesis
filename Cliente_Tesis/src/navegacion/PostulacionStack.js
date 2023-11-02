@@ -12,7 +12,9 @@ export function PostulacionStack() {
       <Stack.Screen
         name={pantalla.postulaciones.postulaciones}
         component={PostulacionesPantalla}
-        options={{ title: "Postulaciones" }}
+        options={{ title: "Postulaciones",        statusBarColor:"#00a680",
+        headerTintColor:"#ffff", 
+        headerStyle:{backgroundColor:"#00a680"}, }}
       />
     </Stack.Navigator>
   );

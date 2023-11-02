@@ -3,8 +3,9 @@ import { Button } from "react-native-elements";
 import React, { useState } from "react";
 import {getAuth,signOut} from "firebase/auth"
 import {CargandoModal} from "../../../Componentes"
-import { InfoUser,AccountOptions} from "../../../Componentes/Account";
+import { InfoUser} from "../../../Componentes/Account";
 import { styles } from "./UsuarioLogueado.style";
+import{AccountOptions} from "../../../Componentes/Account/AccountOptions"
 
 export function UsuarioLogueado() {
     const [loading, setLoading] = useState(false);
@@ -22,7 +23,6 @@ export function UsuarioLogueado() {
     return (
         <View>
             <InfoUser setLoading={setLoading} setLoadingText={setLoadingText} />
-
             <AccountOptions onReload={onReload}/>
             <Button
                 title="Cerrar Sesion"

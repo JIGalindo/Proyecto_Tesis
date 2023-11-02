@@ -4,6 +4,8 @@ import { ListItem, Icon, Text } from "react-native-elements";
 import { map } from "lodash";
 import { Modal } from "../../Componentes/compartidos";
 import { ChangeDisplayNameForm } from "../../Componentes/Account";
+import {ChangeEmailForm} from "../../Componentes/Account"
+import {ChangePasswordForm} from "../Account/ChangePasswordForm"
 
 export function AccountOptions(props) {
   const { onReload } = props;
@@ -15,18 +17,18 @@ export function AccountOptions(props) {
 
   const selectedComponent = (key) => {
     if (key === "displayName") {
-      const onCloseOpenModal = () => setShowModal((prevState) => !prevState);
       setRenderComponent(
         <ChangeDisplayNameForm onClose={onCloseOpenModal} onReload={onReload} />
       );
     }
     if (key === "email") {
-      setRenderComponent(<ChangeDisplayNameForm onClose={onCloseOpenModal} />);
+      setRenderComponent(<ChangeEmailForm onClose={onCloseOpenModal} onReload={onReload}/>
+      );
     }
     if (key === "password") {
+      setRenderComponent(<ChangePasswordForm onClose={onCloseOpenModal}/>);
     }
     onCloseOpenModal();
-    setRenderComponent(<ChangeDisplayNameForm onClose={onCloseOpenModal} />);
   };
 
   const menuOptions = getMenuOptions(selectedComponent);

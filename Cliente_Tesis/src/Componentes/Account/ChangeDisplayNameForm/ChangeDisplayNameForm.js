@@ -1,9 +1,9 @@
-import { View, Text } from "react-native";
+import { View } from "react-native";
 import React from "react";
 import { Input, Button } from "react-native-elements";
 import {useFormik} from "formik"
 import {getAuth,updateProfile} from "firebase/auth";
-import Toast from "react-native-toast-message"
+import toast from "react-native-toast-message"
 import {initialValues,validationSchema} from "./ChangeDisplayNameForm.data"
 import { styles } from "./ChangeDisplayNameForm.styles";
 
@@ -23,7 +23,7 @@ export function ChangeDisplayNameForm(props) {
                 onReload();
                 onClose();
             } catch (error) {
-                Toast.show({
+                toast.show({
                     type:"error",
                     position:"bottom",
                     text1:"Error al cambiar nombre y apellido"

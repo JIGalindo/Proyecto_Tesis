@@ -5,14 +5,13 @@
         justifyContent: 'center',
         alignItems: 'center',
         marginHorizontal:15,
-        marginVertical:15,
+        marginVertical:5,
         
     },
     imagen:{
         resizeMode:"contain",
-        width:150,
-        height:150,
-        borderBottomLeftRadius:100
+        width:200,
+        height:200,
     },
     textRegistro:{
         marginHorizontal:15,

@@ -7,6 +7,7 @@ import * as ImagePicker from "expo-image-picker"
 import {getStorage,ref,uploadBytes,getDownloadURL} from "firebase/storage"
 
 export function InfoUser(props) {
+  
   const {setLoading,setLoadingText}= props;
   const {uid,photoURL,displayName,email} = getAuth().currentUser
   const [avatar, setAvatar] = useState(photoURL)
@@ -17,7 +18,7 @@ export function InfoUser(props) {
       allowsEditing:true,
       aspect:[4,3]
     });
-    if(!result.canceled) uploadImage(result.uri)
+    if(!result.canceled) uploadImage(result.assets[0].uri)
   };
 
   const uploadImage = async (uri) =>{

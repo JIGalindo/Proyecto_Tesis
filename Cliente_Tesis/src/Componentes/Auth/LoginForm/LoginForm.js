@@ -1,14 +1,13 @@
-import { View } from "react-native";
+import { View} from "react-native";
 import React, { useState } from "react";
 import { Input, Icon, Button } from "react-native-elements";
 import { styles } from "./LoginForm.style";
 import { initialValues, validationSchema } from "./LoginForm.data";
 import { useFormik } from "formik";
 import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
-import Toast from "react-native-toast-message";
+import { Toast } from "react-native-toast-message/lib/src/Toast";
 import {useNavigation} from "@react-navigation/native"
 import { pantalla } from "../../../Utilidades";
-
 
 export function LoginForm() {
   const [showPass, setshowPass] = useState(false);
@@ -39,7 +38,8 @@ export function LoginForm() {
     }, 
   });
   return (
-    <View style={styles.contenido}>
+
+        <View style={styles.contenido}>
       <Input
         placeholder="correo electronico"
         containerStyle={styles.Input}

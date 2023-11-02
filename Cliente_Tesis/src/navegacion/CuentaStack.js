@@ -13,17 +13,32 @@ export function CuentaStack() {
       <Stack.Screen
         name={pantalla.cuenta.cuenta}
         component={CuentaPantalla}
-        options={{ title: "Cuenta" }}
+        options={{
+          title: "Cuenta",
+          statusBarColor: "#00a680",
+          headerTintColor: "#ffff",
+          headerStyle: { backgroundColor: "#00a680" },
+        }}
       />
       <Stack.Screen
         name={pantalla.cuenta.logueo}
         component={LoginPantalla}
-        options={{ title: "Iniciar Sesion" }}
+        options={{
+          title: "Iniciar Sesion",
+          statusBarColor: "#00a680",
+          headerTintColor: "#ffff",
+          headerStyle: { backgroundColor: "#00a680" },
+        }}
       />
-        <Stack.Screen
+      <Stack.Screen
         name={pantalla.cuenta.registro}
         component={RegistroPantalla}
-        options={{ title: "Crea tu cuenta" }}
+        options={{
+          title: "Crea tu cuenta",
+          statusBarColor: "#00a680",
+          headerTintColor: "#ffff",
+          headerStyle: { backgroundColor: "#00a680" },
+        }}
       />
     </Stack.Navigator>
   );

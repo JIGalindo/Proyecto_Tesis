@@ -1,4 +1,4 @@
-import { View, ScrollView } from "react-native";
+import { View, ScrollView, KeyboardAvoidingView, Platform } from "react-native";
 import { Text, Image } from "react-native-elements";
 import { useNavigation } from "@react-navigation/native";
 import React from "react";

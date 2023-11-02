@@ -10,6 +10,7 @@ import { CuentaStack } from "./CuentaStack";
 const Tab = createBottomTabNavigator();
 
 export function AppNavigation() {
+  
   return (
     <Tab.Navigator
       screenOptions={({ route }) => ({
@@ -23,7 +24,7 @@ export function AppNavigation() {
       <Tab.Screen
         name={pantalla.buscar.tab}
         component={BuscarStack}
-        options={{ title: "Buscar" }}
+        options={{ title: "Buscar"}}
       />
       <Tab.Screen
         name={pantalla.empleo.tab}

@@ -1,7 +1,8 @@
 const empleosStack ={
     tab:"EmpleosTab",
     empleos:"Empleos",
-    addEmpleo:"AddEmpleo"
+    addEmpleo:"AddEmpleo",
+    empleo:"empleo"
 }
 const postulacionesStack ={
     tab:"PostulacionesTab",
